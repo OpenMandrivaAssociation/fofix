@@ -20,8 +20,7 @@ Requires:       python-opengl
 Requires:       pygame
 Requires:	pyvorbis
 Requires:	python-pyxml
-Obsoletes:	fretsonfire
-Conflicts:	%name < %version-%release
+
 
 
 %description
@@ -68,42 +67,6 @@ Simplified list of features
     * In-Game Star Score Display (continuous partial star fillup available)
     * Optional scrolling or static MIDI / RockBand lyrics (where available)
     * World high score chart with optional score uploading 
-
-%description -l de
-Fretsonfire Gabel mit vielen Funktionen, anpassbare Themen und Optionen
-Ein Multi-OS-Rhythmus-Spiel, in Python geschrieben, ähnlich wie bei Guitar Hero oder Rock Band. Gitarre spielen,
-Bass oder Schlagzeug zusammen mit Ihren Lieblingssongs auf Ihrem Computer entweder mit der Tastatur oder
-Instrumente. Sie können Ihre Guitar Hero oder Rock Band Instrument-Controller. 
-
-%description -l fr
-Fretsonfire fourche avec beaucoup de fonctionnalités, des thèmes personnalisables et des options
-A multi-OS jeu de rythme, écrit en Python, similaire à Guitar Hero ou Rock Band. Jouer de la guitare,
-basse ou la batterie avec vos chansons préférées sur votre ordinateur en utilisant le clavier de votre ou
-instruments. Vous pouvez utiliser votre Guitar Hero ou Rock Band contrôleurs instrument.
-
-%description -l es
-FretsOnFire tenedor con un montón de características, temas personalizables y opciones de
-A ritmo de juego multi-OS, escrito en Python, similar al Guitar Hero o Rock Band. Tocar la guitarra,
-el bajo o la batería junto con sus canciones favoritas en tu ordenador utilizando el teclado o el
-Instrumentos. Puede utilizar el Guitar Hero o Rock Band controladores de instrumento.
-
-%description -l pl
-FretsOnFire widelec z dużą ilością funkcji, motywy konfigurowalny i opcje
-Multi-OS rytm gry, napisany w Pythonie, podobnie jak Guitar Hero czy Rock Band. Grać na gitarze,
-bas i perkusja wraz z Twojej ulubionej muzyki na komputerze przy użyciu klawiatury lub
-instrumentów. Możesz używać Guitar Hero czy Rock Band kontrolerów instrumentu.
-
-%description -l sr
-ФретсОнФире виљушка са доста могућности, прилагодљивих тема и опције
-'Мулти-ос ритам игре, написана у Пытхон-у, слично Гитара Херој или рок бенд. Свира гитару,
-бас и бубањ, заједно са својим омиљеним песмама на ваш рачунар ни преко тастатуре или
-инструменти. Можете користити Гуитар Херо или Роцк Банд Инструмент контролера.
-
-%description -l nl
-FretsOnFire vork met tal van functies, aanpasbare thema's en opties
-Een multi-OS ritme spel, geschreven in Python, vergelijkbaar met Guitar Hero of Rock Band. Speel gitaar,
-bas of drums samen met uw favoriete nummers op uw computer met behulp van uw toetsenbord of
-instrumenten. U kunt uw Guitar Hero of Rock Band instrument controllers.
 
 %prep
 %setup -q 
@@ -154,15 +117,6 @@ EOF
 rm -rf %{buildroot}
 
 %post
-%__chmod 777 /usr/share/games/fofix
-%__chmod 777 /usr/share/games/fofix/src
-%__chmod 777 /usr/share/games/fofix/src/*
-%__chmod 777 /usr/share/games/fofix/src/*/*
-%__chmod 777 /usr/share/games/fofix/data
-%__chmod 777 /usr/share/games/fofix/data/*
-%__chmod 777 /usr/share/games/fofix/data/*/*
-%__chmod 777 /usr/share/games/fofix/data/*/*/*
-%__chmod 777 /usr/share/games/fofix/data/*/*/*/*
 %{update_desktop_database}
 
 
