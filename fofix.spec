@@ -7,7 +7,7 @@ Name: 		%{name}
 Version: 	%{version}
 Release: 	%{release}
 Group:   	Games/Arcade
-License: 	GPL
+License: 	GPLv2
 URL:     	http://code.google.com/p/fofix/
 Source:  	%{name}-%{version}.tar.bz2
 BuildRequires:  desktop-file-utils
