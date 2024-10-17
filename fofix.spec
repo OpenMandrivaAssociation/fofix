@@ -8,7 +8,7 @@ Version: 	%{version}
 Release: 	%{release}
 Group:   	Games/Arcade
 License: 	GPLv2
-URL:     	http://code.google.com/p/fofix/
+URL:     	https://code.google.com/p/fofix/
 Source:  	%{name}-%{version}.tar.bz2
 BuildRequires:  desktop-file-utils
 BuildArch:      noarch 
