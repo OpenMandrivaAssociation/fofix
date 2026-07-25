@@ -1,6 +1,6 @@
 %define name fofix
 %define version 3.121
-%define release %mkrel 1
+%define release 2
 
 Summary: 	FoFiX - A fork of FretsOnFire
 Name: 		%{name}
